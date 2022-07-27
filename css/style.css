@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e3768;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.main-nav {
+    background-color: #fff;
+    padding: 20px;
+    
+}
+
+.hamburger {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger .hamburger-lines {
+    display: flex;
+    width: 20px;
+    flex-wrap: wrap;
+    height: 1em;
+    align-content: space-between;
+}
+
+.hamburger .hamburger-line {
+    height: 2px;
+    background-color: #000;
+    display: block;
+    width: 20px;
+   
+}
+
+.hamburger .menu-text {
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.main-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    width: 240px;
+    margin: 0;
+    height: 100%;
+    padding-top: 20px;
+    list-style-type: none;
+    transition: all .4s;
+    transform: translateX(-100%);
+}
+
+.main-menu .main-menu-item {
+    padding: 5px 0;
+}
+
+.main-menu .main-menu-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.main-menu .main-menu-item a:hover {
+    text-decoration: underline;
+}
+
+/* .hamburger:focus~.main-menu {
+
+    transform: translateX(0);
+} */
+
+
+/* * {
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: blue;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    float: left;
+} 
+
+#menu {
+    text-decoration: none;
+    color: black;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 24px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+    transform: translateX(-100%); 
+}
+
+.main-header-content {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    padding: 2px;
+}
+
+#menu-list {
+    background-color: white;
+    width: 150px;
+    height: 100vh;
+    padding-top: 5px;
+    display: none;
+    transform: translateX(-100%);
+}
+
+ul {
+    list-style-type: none;   
+}
+
+ul .link {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+ul .link .decor {
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+} */
+
+/* div .content {
+    background-color: red;
+    width: 150px;
+    height: 100vh;
+    padding-top: 5px;
+    display: flex;
+    transform: translateX(0);
+    text-transform: uppercase;
+} */
