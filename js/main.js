@@ -1,3 +1,21 @@
+// ROZWIĄZANIE WYKŁAD
+
+// $(document).ready(function () {
+//     $('.hamburger').click(function () {
+//         $('.main-menu').toggleClass('open');
+//     });
+
+//     $('.main-menu-item a').click(function (e) {
+//         e.preventDefault();
+//         $('body').fadeOut(2000, function(){
+//             window.location.href = $(e.target).attr('href');
+//         });
+//     });
+// });
+
+
+// ROZWIĄZANIE MOJE
+
 $(document).ready(function () {
     $('.hamburger').click(function () {
         if ($('.main-menu').hasClass('open')) {
@@ -10,17 +28,14 @@ $(document).ready(function () {
         }
     });
 
-    $('.main-menu-item').click(function (e) {
+    $('.main-menu-item a').click(function (e) {
         e.preventDefault();                   
-        $('body').fadeOut(2000);
-         
-        let hrefValue = $('a:hover').attr('href');
-        $(location).attr('href', hrefValue);   
-               
-        console.log(hrefValue);                  
-           	
+        $('body').fadeOut(2000, function(){
+            window.location.href = $(e.target).attr('href');
+        });                       	
     });
-})
+});
+
 
 
 
